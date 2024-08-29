@@ -1,2 +1,2 @@
 #!/bin/bash
-come to me all you who labour and are heavy laden and i will give you rest
+echo "come to me all you who labour and are heavy laden and i will give you rest"
