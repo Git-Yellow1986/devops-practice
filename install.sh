@@ -7,7 +7,7 @@
         echo " It is not root user $USERID "
         exit 1 
     fi    
-        dnf list installed mysql
+        dnf list installed git
 
     if [ $? -ne 0 ]
         then 
