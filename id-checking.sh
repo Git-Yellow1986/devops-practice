@@ -9,5 +9,5 @@
     else
         echo "Now start install MySql"
     
-    dnf install msql -y
+    dnf install mysql -y
 fi
