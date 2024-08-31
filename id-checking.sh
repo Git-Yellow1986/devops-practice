@@ -6,7 +6,8 @@
     then 
         echo " It is not root user $userid "
         exit 1
-    fi
-
-    dnf install msql -y
+    else
+        echo "Now start install MySql"
     
+    dnf install msql -y
+fi
