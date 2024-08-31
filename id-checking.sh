@@ -6,4 +6,7 @@
     then 
         echo " It is not root user $userid "
         exit 1
-        fi
+    fi
+
+    dnf install msql -y
+    
