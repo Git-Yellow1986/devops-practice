@@ -1,11 +1,9 @@
 #!/bin/bash
-today=$present
+number=$1
 
-if( $today == "suday" || "monday" || "tuesday" || "wensday" || "thursday" || "frinday" || "saturday")
-{
-echo "Please atted the class"
-}
-else {
-echo " sorry"
-}
-fi
+    if[ $number -gt 20]
+        then 
+        echo "given number $number is greater than 20"
+        else 
+        echo "The given number is $number is less than 20"
+        fi
