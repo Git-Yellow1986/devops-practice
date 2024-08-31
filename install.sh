@@ -6,9 +6,8 @@
     then 
         echo " It is not root user $USERID "
         exit 1 
-    else
-fi    
-    dnf list installed git
+    fi    
+        dnf list installed git
 
     if [ $? -ne 0 ]
         then 
