@@ -1,5 +1,5 @@
 #!/bin/bash
-NUMBER=$1
+NUMBER=$1 # it deos not give space when assign the veriable
 
     if [ $NUMBER -gt 20 ]
         then 
