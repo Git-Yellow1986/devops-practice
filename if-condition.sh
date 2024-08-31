@@ -2,7 +2,10 @@
 today=$present
 
 if( $today == "suday" || "monday" || "tuesday" || "wensday" || "thursday" || "frinday" || "saturday")
+{
 echo "Please atted the class"
-else
+}
+else {
 echo " sorry"
+}
 fi
