@@ -2,19 +2,19 @@
 USERID=$(id -u)
 
 
-if [$USERID -ne 0]
+if [ $USERID -ne 0 ]
 then 
         echo " Please run this scrip with root previlege..."
         exit 1
 fi
 
         dnf list installed git
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then 
         echo " Git is not installed, going to install"
         dnf install git -y
 
-            if [ $? -ne 0]
+            if [ $? -ne 0 ]
             then 
                 echo "Git installation is not Success"
                 exit 1
