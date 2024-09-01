@@ -14,12 +14,12 @@ then
         echo " Git is not installed, going to install"
         dnf install git -y
 
-            if [ $? -ne 0 ]
+            if [ $1 -ne 0 ]
             then 
-                echo "Git installation is not Success"
+                echo "Git installation Failure"
                 exit 1
             else
-                echo "Git installatation is Success"
+                echo "Git install is Success"
             fi
         else
             echo "Git is already installed, nothing to do...."
@@ -31,7 +31,7 @@ then
         echo "Mysql is not installed, going to install"
         dnf install mysql -y
 
-            if [ $? -ne 0 ]
+            if [ $1 -ne 0 ]
             then 
                 echo " Mysql installation is failure"
             else
