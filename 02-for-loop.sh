@@ -1,10 +1,10 @@
 #!/bin/bash
-USERID=$(id -u)
 
+USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then 
-        echo " Please run this scrip with root previlege..."
+        echo " Please run this scrip with root previlege... $USERID"
         exit 1
 fi
 
