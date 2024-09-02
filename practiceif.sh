@@ -2,10 +2,12 @@
 
 USERID=$(id -u)
 
+CHECK_ROOT(){
 if [ $USERID -ne 0 ]
 then 
     echo " Please run this script with root previlege...."
     exit 1
-else
-    echo " Script is running"
 fi
+}
+
+CHECK_ROOT
