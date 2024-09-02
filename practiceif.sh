@@ -21,6 +21,10 @@ VALIDATE(){
     fi
     }
 
+UNINSTAL_SOFT(){
+    dnf remove msql -y
+}
+
 CHECK_ROOT
 
 dnf list installed mysql -y
@@ -30,10 +34,10 @@ then
     echo "Please install git, going to install it"
         dnf install mysql -y
     
-    VALIDATE
+    VALIDATE 
 
         else 
             echo " Mysql is already installed , nothing to do ..."
             fi
 
-    
+    UNINSTAL_SOFT
