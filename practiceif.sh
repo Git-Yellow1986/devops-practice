@@ -22,7 +22,15 @@ VALIDATE(){
     }
 
 UNINSTAL_SOFT(){
+    if [ $? -eq 0 ]
+    then 
+           
     dnf remove mysql -y
+    echo "MySql is removed now"
+    else
+    echo "Mysql not installed"    
+fi
+
 }
 
 CHECK_ROOT
@@ -34,10 +42,9 @@ then
     echo "Please install git, going to install it"
         dnf install mysql -y
     
-    VALIDATE 
-
-        else 
+            else 
             echo " Mysql is already installed , nothing to do ..."
-            fi
+    fi
+VALIDATE $? " listing "
 
-    UNINSTAL_SOFT
+    
