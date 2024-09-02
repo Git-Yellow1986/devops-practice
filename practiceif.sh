@@ -15,6 +15,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]
     then    
         echo "your program is not installed"
+        exit 1
         else
         echo "your program is installed successfully....."
     fi
