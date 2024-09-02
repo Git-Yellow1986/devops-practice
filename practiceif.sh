@@ -22,7 +22,7 @@ VALIDATE(){
     }
 
 UNINSTAL_SOFT(){
-    dnf remove msql -y
+    dnf remove mysql -y
 }
 
 CHECK_ROOT
