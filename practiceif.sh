@@ -49,7 +49,7 @@ VALIDATE $? " listing "
 
 sleep 10
 
-UNISTAL_SOFT
+UNINSTAL_SOFT
 
 
     
