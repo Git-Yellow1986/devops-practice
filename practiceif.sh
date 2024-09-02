@@ -14,7 +14,7 @@ CHECK_ROOT
 
 dnf list installed mysql -y
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then 
     echo "Please install git, going to install it"
         dnf install mysql -y
@@ -22,5 +22,5 @@ then
         else 
             echo " Mysql is already installed , nothing to do ..."
             fi
-            
+
     
