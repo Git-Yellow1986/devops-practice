@@ -26,7 +26,7 @@ CHECK_ROOT(){
 
 CHECK_ROOT
 
-for PACKAGE in $@
+for package in $@
 do 
         dnf list installed $package
             if [ $? -ne 0]
