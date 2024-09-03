@@ -12,7 +12,7 @@ CHECK_ROOT(){
 
 CHECK_ROOT
 
-for $PACKAGE in $@
+for PACKAGE in $@
 do 
-    $PACKAGE
+    echo "$PACKAGE"
     done
