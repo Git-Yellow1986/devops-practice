@@ -19,6 +19,7 @@ VALIDATE(){
 }
 
 CHECK_ROOT
+
 for package in $@ # install any packege 
 do 
 dnf install $package
@@ -26,8 +27,10 @@ dnf install $package
     then 
         echo " The $package is not installed, going to install it...."
         dnf install $package -y
-       VALIDATE $?
+
+       VALIDATE 
+
         else
-        echo " The $package is already installed..."
+        echo " The $package is installed successfully..."
     fi
 done

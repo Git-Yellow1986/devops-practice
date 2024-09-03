@@ -5,7 +5,7 @@
     if [ $USERID -ne 0 ]
     then 
         echo " It is not root user $USERID "
-        exit 1
+        exit 1 
     else
         echo "Now start install MySql"
     
