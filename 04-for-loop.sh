@@ -34,6 +34,7 @@ do
                 echo "$package is not intalled, going to install it"
                     dnf install $package -y
                         VALIDATE $? "Installing $package"
+                        sleep 10 # To abserve the program status until here
                else         
                      echo "$package is already installed, nothing to do ....."
             fi
