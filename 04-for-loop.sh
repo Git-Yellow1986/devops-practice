@@ -11,6 +11,7 @@ CHECK_ROOT(){
 }
 
 CHECK_ROOT
+
 for PACKAGE in $@
 do 
     $PACKAGE
