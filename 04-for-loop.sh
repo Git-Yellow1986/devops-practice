@@ -14,5 +14,5 @@ CHECK_ROOT
 
 for PACKAGE in $@
 do 
-    echo "$PACKAGE"
+    echo $PACKAGE
     done
