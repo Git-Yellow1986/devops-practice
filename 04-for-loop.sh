@@ -29,7 +29,7 @@ CHECK_ROOT
 for package in $@
 do 
         dnf list installed $package
-            if [ $? -ne 0]
+            if [ $? -ne 0 ]
             then
                 echo "$package is not intalled, going to install it"
                     dnf install $package -y
