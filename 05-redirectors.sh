@@ -1,9 +1,10 @@
+#!/bin/bash
 LOGS_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
-TIMESTAMP=$(DATE +%y-%M-%d-%H-%m-%s)
+TIMESTAMP=$(DATE +%Y-%m-%d-%H-%M-%S)
 LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME-$TIMESTAMP.log"
-
 mkdir -p $LOGS_FOLDER
+
 USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
@@ -26,8 +27,16 @@ VALIDATE(){
     fi
     }
 
+    USAGE(){
+        echo -e "$R USAGE: $N sudo sh 05-redirecctors.sh package1 package2 ....."
+    }
+    CHECK_ROOT
+        if [ $# -eq 0 ]
+        then 
+            USAGE
+        fi
 
-    for package in $@
+    for package in $@ # $@ refers to all arguments passed to it 
     do 
         dnf list installed $package | tee -a $LOG_FILE
             if [ $? -ne 0 ]
