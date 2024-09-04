@@ -16,7 +16,8 @@ CHECK_ROOT(){
     if [ $USERID -ne 0 ]
     then
         echo -e "$R Please run this script with root priveleges $N" | tee -a $LOG_FILE
-        exit 1    fi
+        exit 1  
+          fi
 }
 
 
