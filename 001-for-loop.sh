@@ -8,6 +8,7 @@ mkdir -p $LOGS_FOLDER
 
 R="\e[31m"
 G="\e[32m"
+Y="\e[33m"
 N="\e[0m"
 
 
@@ -32,6 +33,7 @@ VALIDATE(){
     fi
 }
     echo "Script started executing at: $(date)"
+
 CHECK_ROOT
     
         for package in $@ # refers to all arguments passed to it
@@ -44,7 +46,7 @@ CHECK_ROOT
                     dnf install $package -y | tee -a $LOG_FILE
                         VALIDATE $? "Install $package"
                     else
-                        echo "The $package is already installed, nothing to do"
+                        echo -e "The $package is already $Y installed, nothing to do $N" | tee -a $LOG_FILE
                 fi 
         done
 
