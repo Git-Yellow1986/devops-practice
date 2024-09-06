@@ -25,11 +25,11 @@ CHECK_ROOT(){
 
 VALIDATE(){
 
-   if [ $? -ne 0 ]
+   if [ $1 -ne 0 ]
    then 
     echo -e "The $2 is .....$R FAILURE $N" | tee -a $LOG_FILE
     else
-    echo -e "The $2 is .....$G SUCCESS $N"  | tee -a $LOG_FILE
+    echo -e "The $2 is .....$G SUCCESS $N" | tee -a $LOG_FILE
     fi
 }
     echo "Script started executing at: $(date)"
@@ -38,7 +38,7 @@ CHECK_ROOT
     
         for package in $@ # refers to all arguments passed to it
         do
-         dnf list installed $package | tee -a $LOG_FILE
+         dnf list installed $package    
 
                 if [ $? -ne 0 ]
                 then 
