@@ -26,9 +26,9 @@ VALIDATE(){
 
    if [ $? -ne 0 ]
    then 
-    echo "The $2 is .....$R FAILURE $N" | tee -a $LOG_FILE
+    echo -e "The $2 is .....$R FAILURE $N" | tee -a $LOG_FILE
     else
-    echo "The $2 is .....$G SUCCESS $N"  | tee -a $LOG_FILE
+    echo -e "The $2 is .....$G SUCCESS $N"  | tee -a $LOG_FILE
     fi
 }
     echo "Script started executing at: $(date)"

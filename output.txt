@@ -1,0 +1,43 @@
+001-for-loop.sh*
+02-for-loop.sh*
+03-for-loop.sh*
+04-for-loop.sh*
+05-redirectors.sh*
+06-redirectors.sh*
+07.expenses.sh
+11-install.sh*
+array*
+functions.sh*
+id-checking.sh*
+if-condition.sh*
+if-with-install.sh*
+if_condition.sh*
+lishanth
+output.txt
+practiceif.sh*
+read-write.sh*
+special-variables.sh*
+story.sh*
+total 50
+-rwxr-xr-x 1 cnusr 197609 1181 Sep  6 20:54 001-for-loop.sh*
+-rwxr-xr-x 1 cnusr 197609  976 Sep  2 00:15 02-for-loop.sh*
+-rwxr-xr-x 1 cnusr 197609  634 Sep  3 00:03 03-for-loop.sh*
+-rwxr-xr-x 1 cnusr 197609  885 Sep  3 17:40 04-for-loop.sh*
+-rwxr-xr-x 1 cnusr 197609 1310 Sep  4 22:03 05-redirectors.sh*
+-rwxr-xr-x 1 cnusr 197609 1249 Sep  4 18:54 06-redirectors.sh*
+-rw-r--r-- 1 cnusr 197609 1457 Sep  5 11:31 07.expenses.sh
+-rwxr-xr-x 1 cnusr 197609  274 Sep  3 14:51 11-install.sh*
+-rwxr-xr-x 1 cnusr 197609  183 Aug 29 19:08 array*
+-rwxr-xr-x 1 cnusr 197609 1112 Sep  1 11:22 functions.sh*
+-rwxr-xr-x 1 cnusr 197609  267 Sep  3 14:51 id-checking.sh*
+-rwxr-xr-x 1 cnusr 197609  261 Aug 31 19:35 if-condition.sh*
+-rwxr-xr-x 1 cnusr 197609 1134 Sep  1 11:16 if-with-install.sh*
+-rwxr-xr-x 1 cnusr 197609  160 Aug 30 11:49 if_condition.sh*
+-rw-r--r-- 1 cnusr 197609   45 Aug 28 16:10 lishanth
+-rw-r--r-- 1 cnusr 197609  306 Sep  6 21:25 output.txt
+-rwxr-xr-x 1 cnusr 197609  800 Sep  2 22:42 practiceif.sh*
+-rwxr-xr-x 1 cnusr 197609  258 Aug 29 19:05 read-write.sh*
+-rwxr-xr-x 1 cnusr 197609  365 Aug 31 11:56 special-variables.sh*
+-rwxr-xr-x 1 cnusr 197609  111 Aug 29 18:16 story.sh*
+bash: lsss: command not found
+bash: lsss: command not found

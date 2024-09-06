@@ -1,0 +1,23 @@
+bash: lsss: command not found
+001-for-loop.sh*
+02-for-loop.sh*
+03-for-loop.sh*
+04-for-loop.sh*
+05-redirectors.sh*
+06-redirectors.sh*
+07.expenses.sh
+11-install.sh*
+Mathews
+array*
+functions.sh*
+id-checking.sh*
+if-condition.sh*
+if-with-install.sh*
+if_condition.sh*
+lishanth
+matthews.txt
+output.txt
+practiceif.sh*
+read-write.sh*
+special-variables.sh*
+story.sh*
