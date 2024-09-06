@@ -50,7 +50,7 @@ CHECK_ROOT
 
                 if [ $? -ne 0 ]
                 then 
-                    echo "The $package is not installed, going to install it...." | tee -a $LOG_FILE
+                    echo "The $package is not installed, going to install it...." 
                     dnf install $package -y 
                         VALIDATE $? "Install $package"
                     else
