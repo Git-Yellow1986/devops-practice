@@ -21,9 +21,9 @@ VALIDATE(){
 
    if [ $? -ne 0 ]
    then 
-    echo "The $2 is .....$RFAILURE$N" | tee -a $LOG_FILE
+    echo "The $2 is .....$R FAILURE $N" | tee -a $LOG_FILE
     else
-    echo "The $2 is .....$GSUCCESS$N"  | tee -a $LOG_FILE
+    echo "The $2 is .....$G SUCCESS $N"  | tee -a $LOG_FILE
     fi
 }
     echo "Script started executing at: $(date)"
@@ -36,7 +36,7 @@ CHECK_ROOT
                 if [ $? -ne 0 ]
                 then 
                     echo "The $package is not installed, going to install it...." | tee -a $LOG_FILE
-                    dnf install $package -y $>>$LOG_FILE
+                    dnf install $package -y &>>$LOG_FILE
                         VALIDATE $? "Install $package"
                     else
                         echo "The $package is already installed, nothing to do"
