@@ -29,7 +29,7 @@ VALIDATE(){
     echo "Script started executing at: $(date)"
 CHECK_ROOT
     
-        for package in $@ refers to all arguments.... 
+        for package in $@ #refers to all arguments.... 
         do
          dnf list installed $package &>>$LOG_FILE
 
