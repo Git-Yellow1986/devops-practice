@@ -51,7 +51,7 @@ CHECK_ROOT
                 if [ $? -ne 0 ]
                 then 
                     echo "The $package is not installed, going to install it...." | tee -a $LOG_FILE
-                    dnf install $package -y | tee -a $LOG_FILE
+                    dnf install $package -y 
                         VALIDATE $? "Install $package"
                     else
                         echo -e "The $package is already $Y installed, nothing to do $N" | tee -a $LOG_FILE
